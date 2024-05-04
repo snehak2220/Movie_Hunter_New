@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CUbuntu:300,400,500,700" rel="stylesheet"> 
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap-reboot.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/nouislider.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/plyr.css' %}">
+	<link rel="stylesheet" href="{% static 'css/photoswipe.css' %}">
+	<link rel="stylesheet" href="{% static 'css/default-skin.css' %}">
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+	<!-- Favicons -->
+
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Dmitry Volkov">
+	<title>Movie Hunter</title>
+
+</head>
+<body class="body">
+
+	<div class="sign section--bg" data-bg="{% static 'images/section.jpg' %}">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="sign__content">
+						<!-- registration form -->
+						<form method="post" action="#" class="sign__form">
+							 {% csrf_token %}
+							<a href="/" style="color:#ff4f0f;"><h4>Movie Hunter</a></h4>
+
+							     <div class="sign__group">
+								<input type="text" class="sign__input" placeholder="User Name" name="username"required>
+							</div>
+
+							<div class="sign__group">
+								<input type="text" class="sign__input" placeholder="First Name" name="first_name"required>
+							</div>
+                            <div class="sign__group">
+								<input type="text" class="sign__input" placeholder="Last Name" name="last_name"required>
+							</div>
+
+							<div class="sign__group">
+								<input type="text" class="sign__input" placeholder="Email" name="email"required>
+							</div>
+
+							<div class="sign__group">
+								<input type="password" class="sign__input" placeholder="Password" name="password1" required>
+							</div>
+                            <div class="sign__group">
+								<input type="password" class="sign__input" placeholder="Confirm Password" name="password2" required>
+							</div>
+
+								 {% if messages %}
+       								 {% for message in messages %}
+            							<div>
+											<p style="font-size:10px;color:red;">{{ message }}</p>
+										</div>
+									{% endfor %}
+    							{% endif %}
+							
+							<button type="submit" style="background-color:#ff4f0f;height:60px;width:200px;border-radius:40px;">Sign up</button>
+
+							<span class="sign__text">Already have an account? <a href="signin">Sign in!</a></span>
+						</form>
+
+						<!-- registration form -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- JS -->
+	<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'js/jquery.mousewheel.min.js' %}"></script>
+	<script src="{% static 'js/jquery.mCustomScrollbar.min.js' %}"></script>
+	<script src="{% static 'js/wNumb.js' %}"></script>
+	<script src="{% static 'js/nouislider.min.js' %}"></script>
+	<script src="{% static 'js/plyr.min.js' %}"></script>
+	<script src="{% static 'js/jquery.morelines.min.js' %}"></script>
+	<script src="{% static 'js/photoswipe.min.js' %}"></script>
+	<script src="{% static 'js/photoswipe-ui-default.min.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

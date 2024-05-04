@@ -1,0 +1,61 @@
+body {
+            background-color: #000;
+            color: #fff;
+            padding-top: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .container-profile {
+            max-width: 600px;
+            margin-top:100px;
+            padding-top:60px;
+
+        }
+        .profile-info {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin:30px 30px 30px 30px;
+        }
+        .profile-info h2 {
+            color: #fff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .profile-info p {
+            color: #ccc;
+            margin-bottom: 10px;
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .profile-info p:last-child {
+            margin-right: 0;
+        }
+        .profile-info .btn-primary {
+            margin-top: 20px;
+            width: 100%;
+        }
+        .edit{
+           width:100%;
+           height:50px;
+           background-color:#ee5007;
+           color:white;
+           border-radius:30px;
+           text-align:center;
+           padding:10px;
+        }
+ input[type=text]{
+  width: 100%;
+  height:30px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=email]{
+  width: 100%;
+  height:30px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
